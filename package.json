@@ -1,0 +1,27 @@
+{
+  "name": "p2w4d2(my_solo_project)",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.7-alpha.4",
+    "express-session": "^1.17.1",
+    "hbs": "^4.1.1",
+    "mongoose": "^5.9.24",
+    "node-fetch": "^2.6.0",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "passport-session": "^1.0.2",
+    "path": "^0.12.7",
+    "sha256": "^0.2.0"
+  }
+}

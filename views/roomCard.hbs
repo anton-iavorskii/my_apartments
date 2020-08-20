@@ -1,0 +1,56 @@
+<div class="wrapRegistrPage">
+   <div class="header ">
+       <div class="nav">
+           <a href="/user/{{user._id}}">в личный кабинет</a>
+           <a href="/logout">выйти</a>
+       </div>
+   </div> 
+    <div class="mainContainerProfile">
+        <div class="userBlock">
+            <div class="nameBlockRoom">
+                <div class="adressRoom">г.{{room.sity}} ул.{{room.street}}</div>
+                <div class="adressRoom">д.{{room.houseNumber}} кв.{{room.flatNumder}}</div>
+                <div class="line">___________________________</div>
+                {{#each room.guests}}
+                <div class="priceRent">стоимость аренды {{this.payment}}</div>
+                {{/each}}
+                <div id="fetchDiv"> средняя цена в {{room.okrug}} - {{dataFetch}} </div>
+                <button class="btnAddRoom"><a href="/guest/add/{{room._id}}">Добавить гостя</a></button>
+            </div>
+        </div>
+
+    
+        <div class="roomsBlock">
+             {{#each room.guests}}
+            <div class="infoGuest">
+                <div class="mainGuestText">КАРТОЧКА ГОСТЯ</div>
+                <div class="nameGuest"> Проживает: <strong>{{this.surname}} {{this.name}} {{this.patronymic}}</strong></div>
+                <div class="guestText"> Дата рождения: <strong>{{this.birth}}</strong></div>
+                <div class="guestText"> Телефон: <strong>{{this.phone}}</strong></div>
+                <div class="guestText"> Паспорт: <strong>{{this.passportNumber}}</strong></div>
+                 <div class="guestText"> Паспорт выдан: <strong>{{this.passportIssue}} {{this.pfssportIssueDate}} </strong></div>
+                <div class="guestText"> Дата заселения: <strong>{{this.dateIn}}</strong></div>
+                <div class="guestText"> Оплата в месяц: <strong>{{this.payment}}</strong></div>
+                <div class="guestText"> Оплата коммунальных платежей: <strong>{{this.fixKommunalPay}}</strong></div>
+                <div class="guestText"> Внесен депозит: <strong>{{this.deposit}}</strong></div>
+                <div class="guestText"> Особые условия: <strong>{{this.specialConditions}}</strong></div>
+                <div class="linkPassport">
+                    <a href="/photoPas/{{this.photoPassport}}">Скан паспорта</a>
+                </div>
+           </div>
+           <div class="withGuest">
+               <div class="textWithGuest">C гостем проживают:</div>
+               <div class="guestText"> ФИО: <strong>{{this.withGuest}}</strong></div>
+               <div class="guestText"> Телефон: <strong>{{this.withGuestPhone}}</strong></div>
+
+           </div>
+           {{/each}}
+           <button class="btnChangeRoom"><a href="/guest/chenge/{{room._id}}">Редактировать данные</a></button>
+        </div>
+        
+    </div>
+    <div class="footer"></div>   
+   </div>
+
+
+   

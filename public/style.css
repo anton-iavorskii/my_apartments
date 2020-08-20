@@ -1,0 +1,284 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans+Condensed:wght@300&family=Quicksand&display=swap');
+
+
+
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 2px;
+}
+
+.wrap {
+    height: 100%;
+    width: 100%;
+    background-image: url(./img/anna-sullivan-FKZsWsFiNDs-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.wrapFormLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    
+} 
+
+.formLogin {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+}
+
+.formInput {
+    width: 20em;
+    height: 3em;
+    margin-bottom: 13%;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+#btnForm {
+    width: 15em;
+    height: 3em;
+    background-color: lightseagreen;
+    border-radius: 7px;
+    margin-bottom: 2em;
+    background-color: #764234;
+    color: #d3d8d7;
+    cursor: pointer;
+    font-size: 1em;
+
+}
+
+.linkReg a {
+    font-size: 1.2em;
+    color: #d3d8d7;
+    text-decoration: none;
+}
+
+
+.wrapRegistrPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.header {
+    height: 8%;
+    width: 100%;
+    background-color: #355a85;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav {
+    margin-right: 10%;
+}
+
+.nav a{
+  color: #d3d8d7;
+  text-decoration: none;
+  margin-left: 2em;
+}
+
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;   
+
+}
+
+.textReg {
+    color: #192532;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer {
+    height: 8%;
+    width: 100%;
+    background-color:#355a85;
+}
+
+.formReg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.textAddInfoReg {
+    color: #192532;
+    font-size: 1.5rem;
+}
+
+.mainContainerProfile {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%; 
+    background-image: url(./img/9.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+
+.userBlock{
+    width: 25%;
+    margin-top: 5%;
+    margin-left: 10%;
+
+}
+
+.roomsBlock {
+    margin-top: 6%;
+}
+
+.nameUser, .surnameUser {
+    font-size: 2.5em;
+}
+
+.roomsText {
+    font-size: 1.5em;
+    margin-bottom: 2%;
+}
+
+.btnAddRoom {
+    width: 40%;
+    height: 3em;
+    border-radius: 7px;
+    margin-top: 8%;
+    background-color: #764234;
+    cursor: pointer;
+    font-size: 1rem;
+
+}
+
+.btnAddRoom a {
+    text-decoration: none;
+    color: #d3d8d7;
+    
+}
+
+.rooms {
+    display: flex;
+    align-items: center;
+    width: 30rem;
+    height: 3rem;
+    border: 1px solid #355a85;
+    border-radius: 7px;
+    margin: 1em 0;
+    padding-left: 2rem;
+    background-color: #d3d8d7;
+}
+
+.btnRooms {
+    text-decoration: none;
+    color:#192532;
+}
+
+.priceRent {
+    font-size: 20px;
+    margin-top: 1rem;
+}
+
+#fetchDiv {
+    font-size: 20px;
+    margin-top: 1rem;
+}
+
+.infoGuest {
+    margin-left: 15%;
+    width: 100%;
+    background-color: #d3d8d7;
+    border-radius:  7px;
+    padding:2rem;
+
+}
+
+
+.mainGuestText {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.nameGuest {
+    font-size: 1rem;
+}
+
+.guestText {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.adressRoom {
+    font-size: 2rem;
+}
+
+.btnChangeRoom {
+    width: 40%;
+    height: 3em;
+    border-radius: 7px;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    background-color: #764234;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left:90%;
+}
+
+.btnChangeRoom a{
+    text-decoration: none;
+    color: #d3d8d7;
+}
+
+.withGuest {
+    margin-left: 15%;
+    margin-top: 3%;
+    background-color: #d3d8d7;
+    border-radius:  7px;
+    width: 100%;
+    padding: 2rem;
+}
+
+
+.linkPassport {
+    font-size: 1rem;
+    margin-top: 20px;
+    border: 1px solid grey;
+    width: 10rem;
+    text-align: center;
+
+}
+
+.linkPassport a {
+   text-decoration: none;
+   color: black
+}

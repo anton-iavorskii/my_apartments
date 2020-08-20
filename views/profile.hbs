@@ -1,0 +1,28 @@
+ <div class="wrapRegistrPage">
+   <div class="header ">
+       <div class="nav">
+           <a href="/user/{{user._id}}">{{user.username}}</a>
+           <a href="/logout">выйти</a>
+       </div>
+   </div> 
+  
+    <div class="mainContainerProfile">
+        
+        <div class="userBlock">
+            <div class="nameBlock">
+                <div class="nameUser">{{user.name}} </div>
+                <div class="surnameUser">{{user.surname}}</div>
+                <button class="btnAddRoom"><a href="/rooms/{{user._id}}">Добавить квартиру</a></button>
+            </div>
+        </div>
+        <div class="roomsBlock">
+            <div class="roomsText">Мои квартиры:</div>
+            {{#each room}}
+           <a class="btnRooms" href="/rooms/info/{{this._id}}"><div class="rooms">{{this.okrug}} - {{this.roomsInFlat}}кк - г.{{this.sity}} ул.{{this.street}} д.{{this.houseNumber}} кв.{{this.flatNumder}}</div></a> 
+            {{/each}}
+           
+      
+        </div>
+    </div>
+    <div class="footer"></div>   
+   </div>

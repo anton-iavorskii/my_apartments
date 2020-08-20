@@ -1,0 +1,43 @@
+ <div class="wrapRegistrPage">
+   <div class="header ">
+       <div class="nav">
+           <a href="/user/{{id}}">в личный кабинет</a>
+           <a href="/logout">выйти</a>
+       </div>
+   </div> 
+    <div class="mainContainer">
+    <div class="textAddInfoReg">Добавьте данные о квартире:</div>
+
+    <div class="formReg">
+       <form class="formLogin" action="/guest/new" method="POST" encType="multipart/form-data">
+         <input class="formInput" type="text" name="surname" placeholder="Фамилия" value="{{guests.surname}}">
+         <input class="formInput" type="text" name="name" placeholder="Имя" value="{{guests.name}}">
+         <input class="formInput" type="text" name="patronymic" placeholder="Отчество" value="{{guests.patronymic}}">
+         <input class="formInput" type="text" name="birth" placeholder="Дата рождения" value="{{guests.birth}}">
+         <input class="formInput" type="text" name="passportNumber" placeholder="Номер паспорта" value="{{guests.passportNumber}}">
+         <input class="formInput" type="text" name="passportIssue" placeholder="Кем выдан" value="{{guests.passportIssue}}"> 
+         <input class="formInput" type="text" name="pfssportIssueDate" placeholder="Дата выдачи" value="{{guests.pfssportIssueDate}}">
+         <input class="formInput" type="text" name="phone" placeholder="Телефон" value="{{guests.phone}}">
+         <input class="formInput" type="text" name="dateIn" placeholder="Дата заселения" value="{{guests.dateIn}}">
+         <input class="formInput" type="text" name="payment" placeholder="Оплата в месяц" value="{{guests.payment}}"> 
+         <input class="formInput" type="text" name="fixKommunalPay" placeholder="Коммунальные в месяц" value="{{guests.fixKommunalPay}}"> 
+         <input class="formInput" type="text" name="deposit" placeholder="Внесен депозит" value="{{guests.deposit}}"> 
+         <input class="formInput" type="text" name="specialConditions" placeholder="Особые условия" value="{{guests.specialConditions}}"> 
+        <input class="formInput" type="text" name="withGuest" placeholder="С гостем проживает (ФИО)">
+        <input class="formInput" type="text" name="withGuestPhone" placeholder="С гостем проживает (телефон)"> 
+
+         <label>Фото паспорта</label>
+         <input class="formInput" type="file" name="fileFoto" >
+          <label>Фото договора</label>
+         <input class="formInput" type="file" name="photoDogovor" placeholder="Фото договора">
+
+         <input type="hidden" name="_id_room" value="{{id}}"> {{!-- скрытое поле --}}
+        <input id="btnForm" type="submit" value="Добавить гостя">
+    </form>
+    </div>
+    </div>
+    <div class="footer"></div>   
+   </div>
+
+
+ 

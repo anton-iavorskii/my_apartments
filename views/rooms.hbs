@@ -1,0 +1,29 @@
+ <div class="wrapRegistrPage">
+   <div class="header ">
+       <div class="nav">
+           <a href="/user/{{id}}">{{user.username}}</a>
+           <a href="/logout">выйти</a>
+           <a href="/">на главную</a>
+       </div>
+   </div> 
+    <div class="mainContainer">
+    <div class="textAddInfoReg">Добавьте данные о квартире:</div>
+
+    <div class="formReg">
+       <form class="formLogin" action="/rooms/add" method="POST">
+         <input class="formInput" type="text" name="roomsInFlat" placeholder="Количество комнат в квартире">
+         <input class="formInput" type="text" name="sity" placeholder="Город">
+         <input class="formInput" type="text" name="okrug" placeholder="Округ">         
+         <input class="formInput" type="text" name="street" placeholder="Улица">
+         <input class="formInput" type="text" name="houseNumber" placeholder="Номер дома">
+         <input class="formInput" type="text" name="flatNumder" placeholder="Номер квартиры">
+         <input class="formInput" type="text" name="studioNumder" placeholder="Номер студии">
+         <input type="hidden" name="_id" value="{{id}}"> {{!-- скрытое поле --}}
+        <input id="btnForm" type="submit" value="Добавить квартиру">
+    </form>
+    </div>
+    </div>
+    <div class="footer"></div>   
+   </div>
+
+   
